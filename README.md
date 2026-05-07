@@ -202,7 +202,7 @@ Run the mailbox test suite:
 
 ```bash
 # In xv6 shell
-$ testmailbox
+$ testmailbox2
 ```
 
 **Test Suite Includes:**
@@ -219,12 +219,11 @@ $ testmailbox
 
 ### Lottery Scheduler Results
 
-#### Experiment 1: Equal Tickets (Fairness)
-8 processes with 10 tickets each - demonstrates fair CPU distribution
+#### Lottery Test Comparison with Default xv6 Scheduler
 
-![Lottery Test Comparison](Test%20Results/Lottery%20Test%20Comparison%20Table%20with%20default.jpeg)
+![Lottery Test Comparison with Default xv6 Scheduler](Test%20Results/Lottery%20Test%20Comparison%20Table%20with%20default.jpeg)
 
-#### Experiment 2-4: Scheduler Behavior
+#### Experiment 1-4: Scheduler Behavior
 Various configurations testing priority, mixed workloads, and starvation prevention
 
 <table>
@@ -261,13 +260,20 @@ Comprehensive testing of all mailbox features including blocking, channels, and 
 
 ## 📚 Documentation
 
-Comprehensive documentation is available in the repository:
+Comprehensive documentation is available in the `Documentation/` folder:
 
-- **[AUDIT_REPORT.md](AUDIT_REPORT.md)** - Complete audit of implementation integrity
-- **[PROJECT_REPORT.md](PROJECT_REPORT.md)** - Detailed project report with evaluation
-- **[lottery_scheduling_modifications.md](lottery_scheduling_modifications.md)** - Lottery scheduler deep dive
-- **[mailbox_ipc_explanation.md](mailbox_ipc_explanation.md)** - Mailbox IPC concept and implementation
-- **[TESTING_GUIDE.md](TESTING_GUIDE.md)** - Testing procedures and guidelines
+### Project Reports
+- **[PROJECT_REPORT.md](Documentation/PROJECT_REPORT.md)** - Complete project report with goals, modifications, and evaluation
+
+### Lottery Scheduler Documentation
+- **[lottery_scheduling_modifications.md](Documentation/lottery_scheduling_modifications.md)** - Detailed lottery scheduler implementation guide
+- **[LOTTERY_SCHEDULER_FIX_V2.md](Documentation/LOTTERY_SCHEDULER_FIX_V2.md)** - Scheduler fixes and improvements
+- **[schedtest_explanation.md](Documentation/schedtest_explanation.md)** - Explanation of scheduler test suite
+
+### Mailbox IPC Documentation
+- **[mailbox_ipc_explanation.md](Documentation/mailbox_ipc_explanation.md)** - Mailbox IPC concept and implementation
+- **[mailbox_implementation_comprehensive.md](Documentation/mailbox_implementation_comprehensive.md)** - Comprehensive mailbox implementation guide
+- **[testmailbox_explanation.md](Documentation/testmailbox_explanation.md)** - Explanation of mailbox test suite
 
 ---
 
@@ -314,4 +320,4 @@ For questions or issues related to the lottery scheduler and mailbox IPC impleme
 
 ---
 
-**Built with ❤️ for Operating Systems Education**
+**Built with ❤️ for  CSE323 Operating System Course**
